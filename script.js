@@ -59,6 +59,7 @@ Array.from(gridElements).forEach(function (element) {
           music.currentTime = 0;
           document.querySelector(".game-turn-info").innerText = "🏆🏆";
           document.querySelector(".game-win-info").innerText = `${turn} Won!`;
+          document.querySelector(".won-animation").style.width = "80px";
         } else {
           turn = changeTurn();
           document.querySelector(".game-turn-info").innerText = `${turn} Turn`;
@@ -79,4 +80,5 @@ document.querySelector(".reset-button").addEventListener("click", function () {
   music.play();
   document.querySelector(".game-turn-info").innerText = `${turn} Turn`;
   document.querySelector(".game-win-info").innerText = "";
+  document.querySelector(".won-animation").style.width = "0px";
 });

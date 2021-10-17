@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 110px 110px 110px;
@@ -53,8 +57,8 @@
   font-size: 20px;
 }
 .won-animation {
-  display: none;
-  height: 80px;
+  width: 0;
+  transition: width 1s ease-in-out;
 }
 .reset-button {
   margin: 28px;
