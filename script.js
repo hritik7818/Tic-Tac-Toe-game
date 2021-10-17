@@ -67,3 +67,16 @@ Array.from(gridElements).forEach(function (element) {
     }
   });
 });
+
+//* reset logic
+
+document.querySelector(".reset-button").addEventListener("click", function () {
+  let boxTexts = document.getElementsByClassName("box-text");
+  Array.from(boxTexts).forEach(function (element) {
+    element.innerText = "";
+  });
+  turn = "X";
+  music.play();
+  document.querySelector(".game-turn-info").innerText = `${turn} Turn`;
+  document.querySelector(".game-win-info").innerText = "";
+});

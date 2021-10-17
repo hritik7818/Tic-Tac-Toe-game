@@ -60,3 +60,21 @@
   margin: 28px;
   padding: 10px;
 }
+.reset-button {
+  margin: 28px;
+  padding: 10px;
+}
+.reset-button {
+  border-radius: 16px;
+  height: 60px;
+  width: 100px;
+  background-color: #ffdeb1;
+  cursor: pointer;
+  font-family: "Gluten";
+  font-weight: bold;
+  font-size: 23px;
+}
+.reset-button:hover {
+  background-color: #555554;
+  color: white;
+}
