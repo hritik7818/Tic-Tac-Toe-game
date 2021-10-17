@@ -57,7 +57,7 @@ Array.from(gridElements).forEach(function (element) {
           gameOverMusic.play();
           music.pause();
           music.currentTime = 0;
-          document.querySelector(".game-turn-info").innerText = "Game Over!";
+          document.querySelector(".game-turn-info").innerText = "🏆🏆";
           document.querySelector(".game-win-info").innerText = `${turn} Won!`;
         } else {
           turn = changeTurn();
