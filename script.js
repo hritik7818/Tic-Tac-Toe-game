@@ -50,16 +50,14 @@ Array.from(gridElements).forEach(function (element) {
   let boxText = element.querySelector(".box-text");
   element.addEventListener("click", function () {
     if (boxText.innerText === "") {
-      if (gameOverCheck()) {
-        document.querySelector(".game-turn-info").innerText = "Game Over!";
-      } else {
+      if (!gameOverCheck()) {
         turnMusic.play();
         boxText.innerText = turn;
         if (checkWin()) {
           gameOverMusic.play();
           music.pause();
           music.currentTime = 0;
-          document.querySelector(".game-turn-info").innerText = "";
+          document.querySelector(".game-turn-info").innerText = "Game Over!";
           document.querySelector(".game-win-info").innerText = `${turn} Won!`;
         } else {
           turn = changeTurn();

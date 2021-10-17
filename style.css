@@ -20,6 +20,10 @@
   font-family: "Gluten";
   font-weight: bold;
   color: rgb(24, 15, 15);
+  cursor: pointer;
+}
+.box:hover {
+  background-color: rgba(218, 175, 119, 0.5);
 }
 .bg-left-0 {
   border-left: none;
