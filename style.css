@@ -1,0 +1,58 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 110px 110px 110px;
+  grid-template-rows: 110px 110px 110px;
+  justify-content: center;
+  margin: 50px;
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: #faebd7;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 75px;
+  font-family: "Gluten";
+  font-weight: bold;
+  color: rgb(24, 15, 15);
+}
+.bg-left-0 {
+  border-left: none;
+}
+.bg-top-0 {
+  border-top: none;
+}
+.bg-right-0 {
+  border-right: none;
+}
+.bg-bottom-0 {
+  border-bottom: none;
+}
+.game-heading {
+  text-align: center;
+  background-color: crimson;
+  color: white;
+  font-size: 50px;
+}
+.game-info {
+  justify-content: center;
+  align-items: left;
+  padding: 30px;
+  margin: 50px;
+  font-family: "Gluten";
+  font-weight: bold;
+  font-size: 20px;
+}
+.won-animation {
+  display: none;
+  height: 80px;
+}
+.reset-button {
+  margin: 28px;
+  padding: 10px;
+}

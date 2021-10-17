@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="game-heading">Welcome to Tic Tac Toe Game!</h1>
+
+    <div class="container">
+        <div class="grid-container">
+            <div class="box bg-left-0 bg-top-0"><span class="box-text"></span> </div>
+            <div class="box bg-top-0"><span class="box-text"></span> </div>
+            <div class="box bg-top-0 bg-right-0"><span class="box-text"></span> </div>
+            <div class="box bg-left-0"><span class="box-text"></span> </div>
+            <div class="box"><span class="box-text"></span> </div>
+            <div class="box bg-right-0"><span class="box-text"></span> </div>
+            <div class="box bg-left-0 bg-bottom-0"><span class="box-text"></span> </div>
+            <div class="box bg-bottom-0"><span class="box-text"></span> </div>
+            <div class="box bg-bottom-0 bg-right-0"><span class="box-text"></span> </div>
+        </div>
+        <div class="game-info">
+            <h1 class="turn-info"><span class="game-turn-info"></span></h1>
+            <h1 class="X won"><span class="game-win-info"></span></h1>
+            <img src="excited.gif" alt="image" class="won-animation">
+            <br>
+            <button class="reset-button">RESET</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
